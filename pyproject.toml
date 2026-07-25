@@ -1,9 +1,10 @@
 [project]
 name = "rediauto"
 version = "0.1.0"
-description = "Add your description here"
+description = "Reposiciona janelas automaticamente para preencher o espaco livre da tela no Windows"
 readme = "README.md"
 requires-python = ">=3.13"
+license = "MIT"
 dependencies = [
     "pystray>=0.19.5",
     "pywin32>=312",
