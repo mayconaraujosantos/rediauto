@@ -4,6 +4,8 @@ Monitor de janelas para Windows que preenche automaticamente o espaço livre da 
 
 Projeto **open source**, licenciado sob [MIT](LICENSE) — use, modifique e distribua livremente.
 
+![Antes: janela maximizada. Depois: ao abrir um novo programa, a tela é dividida automaticamente entre as duas janelas](assets/demo.png)
+
 ## Funcionalidades
 
 - Detecta a próxima janela aberta e move para o lado livre da tela
@@ -43,6 +45,7 @@ Gera `dist/rediauto.exe`, um executável standalone (não precisa de Python inst
 | `make sync` | Instala/atualiza as dependências do projeto |
 | `make run` | Roda o app em modo console (`uv run main.py`) |
 | `make icon` | Regenera o ícone em `assets/icon.ico` |
+| `make demo` | Regenera a imagem `assets/demo.png` usada neste README |
 | `make build` | Gera o ícone e empacota `dist/rediauto.exe` |
 | `make clean` | Remove artefatos de build (`build/`, `dist/`, `*.spec`) |
 
@@ -51,7 +54,9 @@ Gera `dist/rediauto.exe`, um executável standalone (não precisa de Python inst
 ```text
 main.py                 # lógica de monitoramento e ícone de bandeja
 scripts/gerar_icone.py  # gera assets/icon.ico
+scripts/gerar_demo.py   # gera assets/demo.png (imagem do README)
 assets/icon.ico          # ícone do app
+assets/demo.png          # imagem ilustrativa usada no README
 ```
 
 ## Contribuindo
